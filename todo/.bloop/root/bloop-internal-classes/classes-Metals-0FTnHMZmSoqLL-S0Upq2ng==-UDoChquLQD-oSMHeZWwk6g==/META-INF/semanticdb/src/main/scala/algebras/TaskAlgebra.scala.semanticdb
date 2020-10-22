@@ -1,0 +1,80 @@
+
+æ)src/main/scala/algebras/TaskAlgebra.scala*)
+algebras/TaskAlgebra#*TaskAlgebra€*2
+ algebras/TaskAlgebra#`<init>`(). €@*<init>€*"
+algebras/TaskAlgebra#[F]	*F€*-
+algebras/TaskAlgebra#tasks(). *tasks€*/
+algebras/TaskAlgebra#tasks(+1). *tasks€*0
+$algebras/TaskAlgebra#tasks(+1).(tag)*tag€*/
+algebras/TaskAlgebra#create(). *create€*1
+$algebras/TaskAlgebra#create().(task)*task€*+
+algebras/TaskAlgebra#read(). *read€*+
+ algebras/TaskAlgebra#read().(id)*id€*/
+algebras/TaskAlgebra#update(). *update€*-
+"algebras/TaskAlgebra#update().(id)*id€*1
+$algebras/TaskAlgebra#update().(task)*task€*/
+algebras/TaskAlgebra#delete(). *delete€*-
+"algebras/TaskAlgebra#delete().(id)*id€*3
+ algebras/TaskAlgebra#complete(). *complete€*/
+$algebras/TaskAlgebra#complete().(id)*id€*+
+algebras/TaskAlgebra#tags(). *tags€2
+ 	algebras/2
+ java/util/UUID#2
+ 
+java/util/2
+ java/2
+ domain/2#
+ algebras/TaskAlgebra#2.
+  algebras/TaskAlgebra#`<init>`().2&
+ algebras/TaskAlgebra#[F]2+
+ algebras/TaskAlgebra#tasks().2&
+ algebras/TaskAlgebra#[F]2)
+ domain/Tasks$package.Tasks#2-
+
+
+ algebras/TaskAlgebra#tasks(+1).22
+
+
+ $algebras/TaskAlgebra#tasks(+1).(tag)2
+
+
+ domain/Tag#2&
+
+
+ algebras/TaskAlgebra#[F]2)
+
+
+  domain/Tasks$package.Tasks#2,
+ algebras/TaskAlgebra#create().22
+ $algebras/TaskAlgebra#create().(task)2
+ domain/Task#2&
+ algebras/TaskAlgebra#[F]2
+ "java/util/UUID#2*
+ algebras/TaskAlgebra#read().2.
+  algebras/TaskAlgebra#read().(id)2
+ java/util/UUID#2&
+ algebras/TaskAlgebra#[F]2
+  scala/Option#2
+! %domain/Task#2,
+ algebras/TaskAlgebra#update().20
+ "algebras/TaskAlgebra#update().(id)2
+ java/util/UUID#22
+ $algebras/TaskAlgebra#update().(task)2
+ #domain/Task#2&
+& 'algebras/TaskAlgebra#[F]2
+( .scala/Option#2
+/ 3domain/Task#2,
+ algebras/TaskAlgebra#delete().20
+ "algebras/TaskAlgebra#delete().(id)2
+ java/util/UUID#2&
+ algebras/TaskAlgebra#[F]2
+  scala/Unit#2.
+  algebras/TaskAlgebra#complete().22
+ $algebras/TaskAlgebra#complete().(id)2
+ java/util/UUID#2&
+ algebras/TaskAlgebra#[F]2
+ $scala/Option#2
+% )domain/Task#2*
+ algebras/TaskAlgebra#tags().2&
+ algebras/TaskAlgebra#[F]2'
+ domain/Tags$package.Tags#PZ 6A890924DB9C93F646F00271B0C3A773

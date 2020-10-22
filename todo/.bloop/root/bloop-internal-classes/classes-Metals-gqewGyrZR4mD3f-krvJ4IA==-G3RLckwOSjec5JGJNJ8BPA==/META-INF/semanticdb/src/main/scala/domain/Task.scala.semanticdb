@@ -1,0 +1,209 @@
+
+Î: src/main/scala/domain/Task.scala*
+domain/Task# ˆ*Task€*)
+domain/Task#`<init>`(). €@*<init>€*)
+domain/Task#`<init>`().(id) €*id€*/
+domain/Task#`<init>`().(state) €*state€*;
+$domain/Task#`<init>`().(description) €*description€*/
+domain/Task#`<init>`().(notes) €*notes€*-
+domain/Task#`<init>`().(tags) €*tags€*
+domain/Task#id. €*id€*#
+domain/Task#state. €*state€*/
+domain/Task#description. €*description€*#
+domain/Task#notes. €*notes€*!
+domain/Task#tags. €*tags€*(
+domain/Task#complete().*complete€*
+local0 €*newState€*
+local1 €*d€* 
+domain/Task#copy().*copy€*"
+domain/Task#copy().(id)*id€*(
+domain/Task#copy().(state)*state€*4
+ domain/Task#copy().(description)*description€*(
+domain/Task#copy().(notes)*notes€*&
+domain/Task#copy().(tags)*tags€*4
+domain/Task#copy$default$1().*copy$default$1€*4
+domain/Task#copy$default$2().*copy$default$2€*4
+domain/Task#copy$default$3().*copy$default$3€*4
+domain/Task#copy$default$4().*copy$default$4€*4
+domain/Task#copy$default$5().*copy$default$5€*
+domain/Task#_1().*_1€*
+domain/Task#_2().*_2€*
+domain/Task#_3().*_3€*
+domain/Task#_4().*_4€*
+domain/Task#_5().*_5€*
+domain/Task.
+ *Task€*"
+domain/Task.apply().*apply€*#
+domain/Task.apply().(id)*id€*)
+domain/Task.apply().(state)*state€*5
+!domain/Task.apply().(description)*description€*)
+domain/Task.apply().(notes)*notes€*'
+domain/Task.apply().(tags)*tags€*&
+domain/Task.unapply().*unapply€*'
+domain/Task.unapply().(x$1)*x$1€*(
+domain/Task.toString().*toString€**
+domain/Task.taskCodec.
+ (*	taskCodec€*,
+domain/Task.taskCodec.apply().*apply€*+
+!domain/Task.taskCodec.apply().(c)*c€*
+local2*id€*
+local3*state€*
+local4*description€*
+local5*notes€*
+local6*tags€*.
+ domain/Task.taskCodec.apply(+1).*apply€*-
+#domain/Task.taskCodec.apply(+1).(t)*t€2
+ domain/2
+
+ 	io/circe/2
+ 	io/2
+ io/circe/syntax/2
+
+ 	io/circe/2
+ 	io/2&
+ java/time/ZonedDateTime#2
+ 
+java/time/2
+ java/2
+ java/util/UUID#2
+ 
+java/util/2
+ java/2
+ domain/Task#2%
+ domain/Task#`<init>`().2
+ java/util/UUID#2
+		 domain/State#2"
+
+
+ scala/Predef.String#2
+ scala/Option#2"
+ scala/Predef.String#2!
+
+ scala/package.List#2
+ domain/Tag#2
+ domain/Task#id.2 
+		 	domain/Task#state.2&
+
+
+ domain/Task#description.2 
+ 	domain/Task#notes.2
+ domain/Task#tags.2%
+ domain/Task#complete().2
+ domain/Task#2
+ local02 
+ domain/Task#state.2"
+ !domain/State.Active.2
+ domain/State.2*
++ 7domain/State.completedNow().2
+% *domain/State.2/
+$ $!domain/State.Completed.unapply().2%
+ $domain/State.Completed.2
+ domain/State.2
+% &local12-
+: :domain/State.Completed.apply().2%
+1 :domain/State.Completed.2
++ 0domain/State.2
+; <local12!
+ domain/Task#copy().2(
+ domain/Task#copy().(state)2
+ "local02
+ domain/Task.2$
+
+ domain/Task.taskCodec.2
+ io/circe/Codec#2
+ !domain/Task#2,
+ domain/Task.taskCodec.apply().2/
+ !domain/Task.taskCodec.apply().(c)2
+ io/circe/HCursor#2&
+' -io/circe/Decoder.Result#2
+ &io/circe/Decoder.2
+. 2domain/Task#2*
+0 0scala/util/Either#flatMap().2$
+( *io/circe/ACursor#as().2+
+ !io/circe/HCursor#downField().2/
+ !domain/Task.taskCodec.apply().(c)2
++ /java/util/UUID#2*
+0 0io/circe/Decoder.decodeUUID.2
+ local22*
+7 7scala/util/Either#flatMap().2$
+. 0io/circe/ACursor#as().2+
+ $io/circe/HCursor#downField().2/
+ !domain/Task.taskCodec.apply().(c)2
+1 6domain/State#2&
+7 7domain/State.stateCodec.2
+ local32*
+D Dscala/util/Either#flatMap().2$
+: <io/circe/ACursor#as().2+
+! *io/circe/HCursor#downField().2/
+  !domain/Task.taskCodec.apply().(c)2"
+= Cscala/Predef.String#2,
+D Dio/circe/Decoder.decodeString.2
+ local42*
+@ @scala/util/Either#flatMap().2$
+. 0io/circe/ACursor#as().2+
+ $io/circe/HCursor#downField().2/
+ !domain/Task.taskCodec.apply().(c)2
+1 7scala/Option#2"
+8 >scala/Predef.String#2.
+@ @ io/circe/Decoder.decodeOption().2,
+@ @io/circe/Decoder.decodeString.2
+ local52&
+9 9scala/util/Either#map().2$
+, .io/circe/ACursor#as().2+
+ #io/circe/HCursor#downField().2/
+ !domain/Task.taskCodec.apply().(c)2!
+/ 3scala/package.List#2
+4 7domain/Tag#2,
+9 9io/circe/Decoder.decodeList().2"
+9 9domain/Tag.tagCodec.2
+ local62"
+ domain/Task.apply().2
+ domain/Task.2
+ local22
+  local32
+" -local42
+/ 4local52
+6 :local62.
+!!  domain/Task.taskCodec.apply(+1).21
+!! #domain/Task.taskCodec.apply(+1).(t)2
+!! domain/Task#2
+!!  io/circe/Json#2"
+"" io/circe/Json.obj().2
+"" io/circe/Json.2-
+## scala/Predef.ArrowAssoc#`->`().2(
+## scala/Predef.ArrowAssoc().2:
+## #,io/circe/syntax/package.EncoderOps#asJson().23
+## %io/circe/syntax/package.EncoderOps().2
+## domain/Task#id.21
+## #domain/Task.taskCodec.apply(+1).(t)2*
+### #io/circe/Encoder.encodeUUID.2-
+$$ scala/Predef.ArrowAssoc#`->`().2(
+$$ scala/Predef.ArrowAssoc().2:
+$#$ ),io/circe/syntax/package.EncoderOps#asJson().23
+$$ %io/circe/syntax/package.EncoderOps().2 
+$$ "domain/Task#state.21
+$$ #domain/Task.taskCodec.apply(+1).(t)2&
+$)$ )domain/State.stateCodec.2-
+%%  scala/Predef.ArrowAssoc#`->`().2(
+%% scala/Predef.ArrowAssoc().2:
+%/% 5,io/circe/syntax/package.EncoderOps#asJson().23
+%!% !%io/circe/syntax/package.EncoderOps().2&
+%#% .domain/Task#description.21
+%!% "#domain/Task.taskCodec.apply(+1).(t)2,
+%5% 5io/circe/Encoder.encodeString.2-
+&& scala/Predef.ArrowAssoc#`->`().2(
+&& scala/Predef.ArrowAssoc().2:
+&#& ),io/circe/syntax/package.EncoderOps#asJson().23
+&& %io/circe/syntax/package.EncoderOps().2 
+&& "domain/Task#notes.21
+&& #domain/Task.taskCodec.apply(+1).(t)2.
+&)& ) io/circe/Encoder.encodeOption().2,
+&)& )io/circe/Encoder.encodeString.2-
+'' scala/Predef.ArrowAssoc#`->`().2(
+'' scala/Predef.ArrowAssoc().2:
+'!' ',io/circe/syntax/package.EncoderOps#asJson().23
+'' %io/circe/syntax/package.EncoderOps().2
+''  domain/Task#tags.21
+'' #domain/Task.taskCodec.apply(+1).(t)2,
+''' 'io/circe/Encoder.encodeList().2"
+''' 'domain/Tag.tagCodec.PZ 06D0D8CD0F8A95E16988F82EEC655095

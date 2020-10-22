@@ -1,0 +1,79 @@
+
+Ë)src/main/scala/algebras/TodoAlgebra.scala*)
+algebras/TodoAlgebra#*TodoAlgebra€*2
+ algebras/TodoAlgebra#`<init>`(). €@*<init>€*"
+algebras/TodoAlgebra#[F]	*F€*-
+algebras/TodoAlgebra#tasks(). *tasks€*/
+algebras/TodoAlgebra#tasks(+1). *tasks€*0
+$algebras/TodoAlgebra#tasks(+1).(tag)*tag€*/
+algebras/TodoAlgebra#create(). *create€*1
+$algebras/TodoAlgebra#create().(task)*task€*+
+algebras/TodoAlgebra#read(). *read€*+
+ algebras/TodoAlgebra#read().(id)*id€*/
+algebras/TodoAlgebra#update(). *update€*-
+"algebras/TodoAlgebra#update().(id)*id€*1
+$algebras/TodoAlgebra#update().(task)*task€*/
+algebras/TodoAlgebra#delete(). *delete€*-
+"algebras/TodoAlgebra#delete().(id)*id€*3
+ algebras/TodoAlgebra#complete(). *complete€*/
+$algebras/TodoAlgebra#complete().(id)*id€*+
+algebras/TodoAlgebra#tags(). *tags€2
+ 	algebras/2
+ java/util/UUID#2
+ 
+java/util/2
+ java/2
+ domain/2#
+ algebras/TodoAlgebra#2.
+  algebras/TodoAlgebra#`<init>`().2&
+ algebras/TodoAlgebra#[F]2+
+ algebras/TodoAlgebra#tasks().2&
+ algebras/TodoAlgebra#[F]2)
+ domain/Tasks$package.Tasks#2-
+
+
+ algebras/TodoAlgebra#tasks(+1).22
+
+
+ $algebras/TodoAlgebra#tasks(+1).(tag)2
+
+
+ domain/Tag#2&
+
+
+ algebras/TodoAlgebra#[F]2)
+
+
+  domain/Tasks$package.Tasks#2,
+ algebras/TodoAlgebra#create().22
+ $algebras/TodoAlgebra#create().(task)2
+ domain/Task#2&
+ algebras/TodoAlgebra#[F]2
+ "domain/Task#2*
+ algebras/TodoAlgebra#read().2.
+  algebras/TodoAlgebra#read().(id)2
+ java/util/UUID#2&
+ algebras/TodoAlgebra#[F]2
+  scala/Option#2
+! %domain/Task#2,
+ algebras/TodoAlgebra#update().20
+ "algebras/TodoAlgebra#update().(id)2
+ java/util/UUID#22
+ $algebras/TodoAlgebra#update().(task)2
+ #domain/Task#2&
+& 'algebras/TodoAlgebra#[F]2
+( .scala/Option#2
+/ 3domain/Task#2,
+ algebras/TodoAlgebra#delete().20
+ "algebras/TodoAlgebra#delete().(id)2
+ java/util/UUID#2&
+ algebras/TodoAlgebra#[F]2
+ #scala/Boolean#2.
+  algebras/TodoAlgebra#complete().22
+ $algebras/TodoAlgebra#complete().(id)2
+ java/util/UUID#2&
+ algebras/TodoAlgebra#[F]2
+ %scala/Boolean#2*
+ algebras/TodoAlgebra#tags().2&
+ algebras/TodoAlgebra#[F]2'
+ domain/Tags$package.Tags#PZ 71414E1FC08882D59BE8DA67B5D34C9E
