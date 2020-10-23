@@ -29,7 +29,7 @@ object InMemoryTaskInterpreter:
             def create(task: Task): F[UUID] =
                 for
                     id <- GenUUID[F].make
-                    _  <- state.flatMap(_.update(_.+ (id -> task)))
+                    _  <- state.flatMap(_.update(_.updated(id,task)))
                 yield id
 
             def read(id: UUID): F[Option[Task]] =
