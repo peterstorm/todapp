@@ -191,7 +191,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "C:\\Program Files\\Java\\jre1.8.0_191",
+                "home": "C:\\Progra~1\\Java\\jdk1.8.0_191\\jre",
                 "options": [
                     "-Duser.dir=E:\\team-development\\pksh\\intellij-workspace\\dotty-backend\\todo\\project\\project"
                 ]

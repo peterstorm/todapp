@@ -12,7 +12,7 @@ import org.http4s.dsl._
 import algebras._
 import domain._
 
-final class TaskRoutes[F[_]: Sync](algebra: TaskAlgebra[F]) extends Http4sDsl[F]:
+final class TaskRoutes[F[_]: Sync](algebra: TaskRepository[F]) extends Http4sDsl[F]:
 
 /*     given decodeProduct as EntityDecoder[F, Task] = jsonOf
     given encoderProduct[F[_] : Applicative] as EntityEncoder[F, Task] = jsonEncoder */

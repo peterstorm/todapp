@@ -4,7 +4,7 @@ import java.util.UUID
 
 import domain._
 
-trait TaskAlgebra[F[_]]:
+trait TaskRepository[F[_]]:
     def tasks: F[Tasks]
 
     def tasks(tag: Tag): F[Tasks]

@@ -14,9 +14,9 @@ import effects.GenZonedTimeDate.{given _}
 import effects._
 
 object InMemoryTaskInterpreter:
-    def create[F[_]: Sync: GenUUID](state: Ref[F, HashMap[UUID, Task]]): TaskAlgebra[F] =
+    def create[F[_]: Sync: GenUUID](state: Ref[F, HashMap[UUID, Task]]): TaskRepository[F] =
 
-        new TaskAlgebra[F]:
+        new TaskRepository[F]:
 
             def tasks: F[Tasks] =
                 state.get.map(m => Tasks(m))
