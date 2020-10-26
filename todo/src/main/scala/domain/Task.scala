@@ -32,7 +32,7 @@ object Task:
         def apply(t: Task): Json =
             Json.obj(
                 "state" -> t.state.asJson,
-                "description" -> t.description.asJson,
+                "description" -> Json.fromString(t.description),
                 "notes" -> t.notes.asJson,
                 "tags" -> t.tags.asJson
             )

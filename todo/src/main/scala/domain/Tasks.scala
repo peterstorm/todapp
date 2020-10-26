@@ -10,7 +10,7 @@ object Tasks:
 
     def apply(tasks: Iterable[(UUID, Task)]): Tasks = tasks
 
-    val empty: Tasks = List.empty
+    val empty: Tasks = Tasks(List.empty)
 
     extension (t: Tasks):
         def toList: List[(UUID, Task)] = t.toList

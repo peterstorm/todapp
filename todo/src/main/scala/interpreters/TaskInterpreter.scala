@@ -14,43 +14,43 @@ import effects._
 
 object InMemoryTaskInterpreter:
 
-    def create[F[_]: Sync: GenUUID]: TaskAlgebra[F] =
+    def create[F[_]: Sync: GenUUID](state: Ref[F, HashMap[UUID, Task]]): TaskAlgebra[F] =
+
         new TaskAlgebra[F]:
-            private val state = Ref.of[F, HashMap[UUID, Task]](HashMap.empty)
 
             def tasks: F[Tasks] =
-                state.flatMap(_.get.map(m => Tasks(m)))
+                state.get.map(m => Tasks(m))
 
             def tasks(tag: Tag): F[Tasks] =
-                state.flatMap(_.get.map( m => Tasks(m.filter { 
+                state.get.map( m => Tasks(m.filter { 
                     case (k, v) => v.tags.contains(tag)
-                })))
+                }))
 
             def create(task: Task): F[UUID] =
                 for
                     id <- GenUUID[F].make
-                    _  <- state.flatMap(_.update(_.updated(id,task)))
+                    _  <- state.update(_.updated(id,task))
                 yield id
 
             def read(id: UUID): F[Option[Task]] =
-                state.flatMap(_.get.map(_.get(id)))
+                state.get.map(_.get(id))
 
             def update(id: UUID, task: Task): F[Option[Task]] =
-                state.flatMap(_.update(_.+ (id -> task)))
+                state.update(_.updated(id, task))
                 read(id)
 
             def complete(id: UUID): F[Option[Task]] =
                 for
-                    completedOptTask <- read(id).map(_.map(_.complete))
-                    updatedTask <- completedOptTask match
+                    optTask <- read(id)
+                    updatedTask <- optTask match
                             case None => Sync[F].pure(None)
-                            case Some(t) => update(id, t) 
+                            case Some(t) => update(id, t.complete) 
                 yield updatedTask
 
             def delete(id: UUID): F[Unit] =
-               state.flatMap(_.update(_.removed(id)))
+            state.update(_.removed(id))
 
             def tags: F[Tags] =
-                state.flatMap(_.get.map(m => Tags(m.values.flatMap(t => t.tags).toList.distinct)))
+                state.get.map(m => Tags(m.values.flatMap(t => t.tags).toList.distinct))
                 
                 
