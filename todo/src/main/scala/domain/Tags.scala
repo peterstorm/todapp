@@ -6,7 +6,6 @@ import io.circe.syntax._
 opaque type Tags = List[Tag]
 
 object Tags:
-    
     def apply(tags: List[Tag]): Tags = tags
 
     extension (t: Tags):

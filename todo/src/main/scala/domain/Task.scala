@@ -11,15 +11,14 @@ final case class Task(
     notes: Option[String],
     tags: List[Tag]
 ): 
-    def complete: Task =
+    def complete(date: ZonedDateTime): Task =
         val newState =
             state match
-                case State.Active => State.completedNow
+                case State.Active => State.completedNow(date)
                 case State.Completed(d) => State.Completed(d)
         this.copy(state = newState)
 
 object Task:
-    
     given taskCodec as Codec[Task]:
         def apply(c: HCursor): Decoder.Result[Task] =
             for

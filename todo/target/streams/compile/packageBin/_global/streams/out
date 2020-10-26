@@ -78,6 +78,14 @@
 [debug] 	  E:\team-development\pksh\intellij-workspace\dotty-backend\todo\target\scala-0.27\classes\effects\GenUUID.class
 [debug] 	effects\GenUUID.tasty
 [debug] 	  E:\team-development\pksh\intellij-workspace\dotty-backend\todo\target\scala-0.27\classes\effects\GenUUID.tasty
+[debug] 	effects\GenZonedTimeDate$.class
+[debug] 	  E:\team-development\pksh\intellij-workspace\dotty-backend\todo\target\scala-0.27\classes\effects\GenZonedTimeDate$.class
+[debug] 	effects\GenZonedTimeDate$syncGenZonedTimeDate.class
+[debug] 	  E:\team-development\pksh\intellij-workspace\dotty-backend\todo\target\scala-0.27\classes\effects\GenZonedTimeDate$syncGenZonedTimeDate.class
+[debug] 	effects\GenZonedTimeDate.class
+[debug] 	  E:\team-development\pksh\intellij-workspace\dotty-backend\todo\target\scala-0.27\classes\effects\GenZonedTimeDate.class
+[debug] 	effects\GenZonedTimeDate.tasty
+[debug] 	  E:\team-development\pksh\intellij-workspace\dotty-backend\todo\target\scala-0.27\classes\effects\GenZonedTimeDate.tasty
 [debug] 	interpreters
 [debug] 	  E:\team-development\pksh\intellij-workspace\dotty-backend\todo\target\scala-0.27\classes\interpreters
 [debug] 	interpreters\InMemoryTaskInterpreter$$anon$1.class

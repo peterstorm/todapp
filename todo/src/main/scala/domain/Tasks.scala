@@ -7,7 +7,6 @@ import java.util.UUID
 opaque type Tasks = Iterable[(UUID, Task)]
 
 object Tasks:
-
     def apply(tasks: Iterable[(UUID, Task)]): Tasks = tasks
 
     val empty: Tasks = Tasks(List.empty)

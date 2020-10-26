@@ -10,10 +10,10 @@ import java.util.UUID
 import domain._
 import algebras._
 import effects.GenUUID.{given _}
+import effects.GenZonedTimeDate.{given _}
 import effects._
 
 object InMemoryTaskInterpreter:
-
     def create[F[_]: Sync: GenUUID](state: Ref[F, HashMap[UUID, Task]]): TaskAlgebra[F] =
 
         new TaskAlgebra[F]:
@@ -36,19 +36,19 @@ object InMemoryTaskInterpreter:
                 state.get.map(_.get(id))
 
             def update(id: UUID, task: Task): F[Option[Task]] =
-                state.update(_.updated(id, task))
-                read(id)
+                state.update(_.updated(id, task)) >> read(id)
 
             def complete(id: UUID): F[Option[Task]] =
                 for
+                    date <- GenZonedTimeDate[F].make
                     optTask <- read(id)
                     updatedTask <- optTask match
                             case None => Sync[F].pure(None)
-                            case Some(t) => update(id, t.complete) 
+                            case Some(t) => update(id, t.complete(date)) 
                 yield updatedTask
 
             def delete(id: UUID): F[Unit] =
-            state.update(_.removed(id))
+                state.update(_.removed(id))
 
             def tags: F[Tags] =
                 state.get.map(m => Tags(m.values.flatMap(t => t.tags).toList.distinct))

@@ -4,13 +4,12 @@ import io.circe._
 import java.time.ZonedDateTime
 
 enum State:
-
   case Active
   case Completed(data: ZonedDateTime)
 
 object State:
-  def completedNow: State =
-    Completed(ZonedDateTime.now())
+  def completedNow(date: ZonedDateTime): State =
+    Completed(date)
 
   given stateCodec as Codec[State]:
     def apply(c: HCursor): Decoder.Result[State] =
