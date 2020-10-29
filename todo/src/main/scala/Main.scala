@@ -5,10 +5,6 @@ import cats.implicits._
 import cats.effect.concurrent.Ref
 import fs2.Stream
 import org.http4s._
-import org.http4s.ember.server.EmberServerBuilder
-import org.http4s.server.staticcontent._
-import org.http4s.server.{Router, Server}
-import org.http4s.syntax.kleisli._
 import scala.collection.immutable.HashMap
 import java.util.UUID
 

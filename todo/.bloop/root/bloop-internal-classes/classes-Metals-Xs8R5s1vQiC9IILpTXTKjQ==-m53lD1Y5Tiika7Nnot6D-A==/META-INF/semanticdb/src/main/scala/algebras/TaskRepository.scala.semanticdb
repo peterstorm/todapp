@@ -1,0 +1,70 @@
+
+ð,src/main/scala/algebras/TaskRepository.scala*/
+algebras/TaskRepository#*TaskRepository€*5
+#algebras/TaskRepository#`<init>`(). €@*<init>€*%
+algebras/TaskRepository#[F]	*F€*0
+ algebras/TaskRepository#tasks(). *tasks€*2
+"algebras/TaskRepository#tasks(+1). *tasks€*3
+'algebras/TaskRepository#tasks(+1).(tag)*tag€*2
+!algebras/TaskRepository#create(). *create€*4
+'algebras/TaskRepository#create().(task)*task€*.
+algebras/TaskRepository#read(). *read€*.
+#algebras/TaskRepository#read().(id)*id€*2
+!algebras/TaskRepository#update(). *update€*0
+%algebras/TaskRepository#update().(id)*id€*4
+'algebras/TaskRepository#update().(task)*task€*2
+!algebras/TaskRepository#delete(). *delete€*0
+%algebras/TaskRepository#delete().(id)*id€*6
+#algebras/TaskRepository#complete(). *complete€*2
+'algebras/TaskRepository#complete().(id)*id€*.
+algebras/TaskRepository#tags(). *tags€2
+ 	algebras/2
+ java/util/UUID#2
+ 
+java/util/2
+ java/2
+ domain/2&
+ algebras/TaskRepository#21
+ #algebras/TaskRepository#`<init>`().2)
+ algebras/TaskRepository#[F]2.
+  algebras/TaskRepository#tasks().2)
+ algebras/TaskRepository#[F]2)
+ domain/Tasks$package.Tasks#20
+		 "algebras/TaskRepository#tasks(+1).25
+		 'algebras/TaskRepository#tasks(+1).(tag)2
+		 domain/Tag#2)
+		 algebras/TaskRepository#[F]2)
+		  domain/Tasks$package.Tasks#2/
+ !algebras/TaskRepository#create().25
+ 'algebras/TaskRepository#create().(task)2
+ domain/Task#2)
+ algebras/TaskRepository#[F]2
+ "java/util/UUID#2-
+ algebras/TaskRepository#read().21
+ #algebras/TaskRepository#read().(id)2
+ java/util/UUID#2)
+ algebras/TaskRepository#[F]2
+  scala/Option#2
+! %domain/Task#2/
+ !algebras/TaskRepository#update().23
+ %algebras/TaskRepository#update().(id)2
+ java/util/UUID#25
+ 'algebras/TaskRepository#update().(task)2
+ #domain/Task#2)
+& 'algebras/TaskRepository#[F]2
+( .scala/Option#2
+/ 3domain/Task#2/
+ !algebras/TaskRepository#delete().23
+ %algebras/TaskRepository#delete().(id)2
+ java/util/UUID#2)
+ algebras/TaskRepository#[F]2
+  scala/Unit#21
+ #algebras/TaskRepository#complete().25
+ 'algebras/TaskRepository#complete().(id)2
+ java/util/UUID#2)
+ algebras/TaskRepository#[F]2
+ $scala/Option#2
+% )domain/Task#2-
+ algebras/TaskRepository#tags().2)
+ algebras/TaskRepository#[F]2'
+ domain/Tags$package.Tags#PZ 6CACD4492D303936DAA362DA4407F9A9

@@ -1,17 +1,0 @@
-
-ÿ(src/main/scala/algebra/TaskAlgebra.scala*(
-algebra/TaskAlgebra#*TaskAlgebra€*1
-algebra/TaskAlgebra#`<init>`(). €@*<init>€*!
-algebra/TaskAlgebra#[F]	*F€*8
-"algebra/TaskAlgebra#getAllTasks(). *getAllTasks€2
- algebra/2
- domain/Task.2
- domain/Task#2
- domain/2"
- algebra/TaskAlgebra#2-
- algebra/TaskAlgebra#`<init>`().2%
- algebra/TaskAlgebra#[F]20
- "algebra/TaskAlgebra#getAllTasks().2%
- algebra/TaskAlgebra#[F]2!
- scala/package.List#2
-  domain/Task#PZ E35244DA40B0B29E1316D57820166EE6

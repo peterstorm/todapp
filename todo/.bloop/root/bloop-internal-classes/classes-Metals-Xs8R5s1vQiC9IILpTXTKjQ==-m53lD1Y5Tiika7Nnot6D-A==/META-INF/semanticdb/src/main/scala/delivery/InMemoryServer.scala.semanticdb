@@ -1,0 +1,70 @@
+
+œ,src/main/scala/delivery/InMemoryServer.scala*1
+delivery/InMemoryServer.
+ *InMemoryServer€*0
+!delivery/InMemoryServer.create().*create€*.
+$delivery/InMemoryServer.create().[F]	*F€*2
+&delivery/InMemoryServer.create().(app)*app€2
+ 	delivery/2
+ cats/effect/2
+ cats/2
+ cats/implicits.2
+ cats/29
+ 1+org/http4s/ember/server/EmberServerBuilder.29
+ 1+org/http4s/ember/server/EmberServerBuilder#2&
+ org/http4s/ember/server/2
+ org/http4s/ember/2
+ org/http4s/2
+ 
+org/2
+ org/http4s/2
+ 
+org/2'
+  org/http4s/server/Server.2 
+ org/http4s/server/2
+ org/http4s/2
+ 
+org/21
+" )#scala/collection/immutable/HashMap.21
+" )#scala/collection/immutable/HashMap#2)
+ !scala/collection/immutable/2
+ scala/collection/2
+ scala/2
+ java/util/UUID#2
+ 
+java/util/2
+ java/2
+
+
+ domain/Task.2
+
+
+ domain/Task#2
+
+
+ domain/2&
+ delivery/InMemoryServer.2/
+ !delivery/InMemoryServer.create().22
+ $delivery/InMemoryServer.create().[F]24
+< ?&delivery/InMemoryServer.create().(app)2)
+A Horg/http4s/package.HttpApp#22
+I J$delivery/InMemoryServer.create().[F]2
+ cats/effect/Sync#22
+ $delivery/InMemoryServer.create().[F]2'
+ 'cats/effect/ContextShift#22
+' '$delivery/InMemoryServer.create().[F]2%
+) 3cats/effect/Concurrent#22
+3 3$delivery/InMemoryServer.create().[F]2 
+5 :cats/effect/Timer#22
+: :$delivery/InMemoryServer.create().[F]2#
+N Vcats/effect/Resource#22
+W X$delivery/InMemoryServer.create().[F]2'
+Z `org/http4s/server/Server#2A
+ 3org/http4s/ember/server/EmberServerBuilder#build().2G
+ 9org/http4s/ember/server/EmberServerBuilder#withHttpApp().2D
+ 6org/http4s/ember/server/EmberServerBuilder#withPort().2D
+ 6org/http4s/ember/server/EmberServerBuilder#withHost().2C
+ 5org/http4s/ember/server/EmberServerBuilder.default().29
+ +org/http4s/ember/server/EmberServerBuilder.22
+ $delivery/InMemoryServer.create().[F]24
+ &delivery/InMemoryServer.create().(app)PZ C14FB275BF8C31C4B0A95EBAEAF726FC

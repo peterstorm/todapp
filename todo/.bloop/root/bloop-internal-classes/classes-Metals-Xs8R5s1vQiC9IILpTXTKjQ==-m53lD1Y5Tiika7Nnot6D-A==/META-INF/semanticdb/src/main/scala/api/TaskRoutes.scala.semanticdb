@@ -1,0 +1,273 @@
+
+‘X#src/main/scala/api/TaskRoutes.scala*$
+api/TaskRoutes# *
+TaskRoutes€*,
+api/TaskRoutes#`<init>`(). €@*<init>€*3
+#api/TaskRoutes#`<init>`().(algebra)*algebra€*
+api/TaskRoutes#[F]	*F€**
+api/TaskRoutes#algebra. €*algebra€*0
+api/TaskRoutes#httpRoutes. €*
+httpRoutes€*
+local0*x$1€*
+local1 €*id€*
+local2*t€*
+local3 €*req€*
+local4*t€*
+local5*id€*
+local6 €*req€*
+local7 €*id€*
+local8*t€*
+local9*t€*
+local10 €*id€*
+local11 €*id€*
+local12*t€*
+local13*tasks€*
+local14 €*tag€*
+local15*tasks€*
+local16*tags€2
+ api/2
+ io/circe/syntax/2
+
+ 	io/circe/2
+ 	io/2
+ cats/effect/2
+ cats/2&
+ cats/syntax/package.all.2
+ cats/syntax/2
+ cats/2
+ org/http4s/2
+ 
+org/2
+ org/http4s/circe/2
+ org/http4s/2
+ 
+org/2G
++ =9org/http4s/circe/CirceEntityDecoder#circeEntityDecoder().22
+ *$org/http4s/circe/CirceEntityDecoder.2
+ org/http4s/circe/2
+ org/http4s/2
+ 
+org/2G
++ =9org/http4s/circe/CirceEntityEncoder#circeEntityEncoder().22
+ *$org/http4s/circe/CirceEntityEncoder.2
+ org/http4s/circe/2
+ org/http4s/2
+ 
+org/2
+		 org/http4s/dsl/2
+		 org/http4s/2
+		 
+org/2
+ 	algebras/2
+ domain/2
+ api/TaskRoutes#2(
+ >api/TaskRoutes#`<init>`().2&
+, :algebras/TaskRepository#2 
+; <api/TaskRoutes#[F]2
+ !cats/effect/Sync#2 
+! !api/TaskRoutes#[F]2'
+G Porg/http4s/dsl/Http4sDsl#2 
+Q Rapi/TaskRoutes#[F]2 
+ api/TaskRoutes#[F]2%
+# *api/TaskRoutes#algebra.2(
+ api/TaskRoutes#httpRoutes.2,
+ org/http4s/package.HttpRoutes#2 
+  api/TaskRoutes#[F]2)
+/ 1org/http4s/HttpRoutes.of().2$
+$ .org/http4s/HttpRoutes.2 
+2 3api/TaskRoutes#[F]2
+ local021
+ #org/http4s/dsl/impl/`->`.unapply().2-
+ org/http4s/dsl/Http4sDsl2#`->`.2.
+  org/http4s/dsl/impl/Methods#GET.20
+# #"org/http4s/dsl/impl/`/`.unapply().2,
+" #org/http4s/dsl/Http4sDsl2#`/`.20
+ "org/http4s/dsl/impl/`/`.unapply().2,
+ org/http4s/dsl/Http4sDsl2#`/`.2-
+ org/http4s/dsl/Http4sDsl2#Root.24
++ +&org/http4s/dsl/impl/PathVar#unapply().20
+$ +"org/http4s/dsl/Http4sDsl2#UUIDVar.2
+, .local12-
+  cats/syntax/FlatMapOps#`>>=`().2?
+ 1cats/syntax/FlatMapSyntax#catsSyntaxFlatMapOps().2-
+ algebras/TaskRepository#read().2%
+ api/TaskRoutes#algebra.2
+ local12"
+$ (scala/Option#fold().2B
+1 14org/http4s/dsl/impl/EntityResponseGenerator#apply().2C
+) )5org/http4s/dsl/impl/Responses#http4sNotFoundSyntax().24
+) 1&org/http4s/dsl/impl/Statuses#NotFound.2
+5 6local22D
+< <6org/http4s/dsl/impl/EntityResponseGenerator#apply(+2).2=
+: :/org/http4s/dsl/impl/Responses#http4sOkSyntax().2.
+: < org/http4s/dsl/impl/Statuses#Ok.2
+= >local22G
+? ?9org/http4s/circe/CirceEntityEncoder#circeEntityEncoder().2$
+? ?domain/Task.taskCodec.2
+ local321
+ #org/http4s/dsl/impl/`->`.unapply().2-
+ org/http4s/dsl/Http4sDsl2#`->`.2/
+ !org/http4s/dsl/impl/Methods#POST.20
+! !"org/http4s/dsl/impl/`/`.unapply().2,
+  !org/http4s/dsl/Http4sDsl2#`/`.2-
+ org/http4s/dsl/Http4sDsl2#Root.2-
+5 8cats/syntax/FlatMapOps#`>>=`().2?
+ 1cats/syntax/FlatMapSyntax#catsSyntaxFlatMapOps().2-
+ cats/syntax/FlatMapOps#`>>=`().2$
+ org/http4s/Media#as().2
+ local32
+ domain/Task#2G
+ 9org/http4s/circe/CirceEntityDecoder#circeEntityDecoder().2$
+ domain/Task.taskCodec.2
+ local42/
+* 0!algebras/TaskRepository#create().2%
+" )api/TaskRoutes#algebra.2
+1 2local42
+: <local52D
+B B6org/http4s/dsl/impl/EntityResponseGenerator#apply(+2).2=
+@ @/org/http4s/dsl/impl/Responses#http4sOkSyntax().2.
+@ B org/http4s/dsl/impl/Statuses#Ok.2
+C Elocal52G
+F F9org/http4s/circe/CirceEntityEncoder#circeEntityEncoder().2*
+F Fio/circe/Encoder.encodeUUID.2
+ local621
+ #org/http4s/dsl/impl/`->`.unapply().2-
+ org/http4s/dsl/Http4sDsl2#`->`.2/
+ !org/http4s/dsl/impl/Methods#POST.20
+* *"org/http4s/dsl/impl/`/`.unapply().2,
+) *org/http4s/dsl/Http4sDsl2#`/`.20
+! !"org/http4s/dsl/impl/`/`.unapply().2,
+  !org/http4s/dsl/Http4sDsl2#`/`.2-
+ org/http4s/dsl/Http4sDsl2#Root.24
+2 2&org/http4s/dsl/impl/PathVar#unapply().20
++ 2"org/http4s/dsl/Http4sDsl2#UUIDVar.2
+3 5local72-
+9 <cats/syntax/FlatMapOps#`>>=`().2?
+ 1cats/syntax/FlatMapSyntax#catsSyntaxFlatMapOps().2-
+ cats/syntax/FlatMapOps#`>>=`().2$
+ org/http4s/Media#as().2
+ local62
+ domain/Task#2G
+ 9org/http4s/circe/CirceEntityDecoder#circeEntityDecoder().2$
+ domain/Task.taskCodec.2
+ local82/
+* 0!algebras/TaskRepository#update().2%
+" )api/TaskRoutes#algebra.2
+1 3local72
+5 6local82"
+@ Dscala/Option#fold().2B
+M M4org/http4s/dsl/impl/EntityResponseGenerator#apply().2C
+E E5org/http4s/dsl/impl/Responses#http4sNotFoundSyntax().24
+E M&org/http4s/dsl/impl/Statuses#NotFound.2
+Q Rlocal92D
+X X6org/http4s/dsl/impl/EntityResponseGenerator#apply(+2).2=
+V V/org/http4s/dsl/impl/Responses#http4sOkSyntax().2.
+V X org/http4s/dsl/impl/Statuses#Ok.2
+Y Zlocal92G
+[ [9org/http4s/circe/CirceEntityEncoder#circeEntityEncoder().2$
+[ [domain/Task.taskCodec.21
+ #org/http4s/dsl/impl/`->`.unapply().2-
+ org/http4s/dsl/Http4sDsl2#`->`.21
+ #org/http4s/dsl/impl/Methods#DELETE.20
+& &"org/http4s/dsl/impl/`/`.unapply().2,
+% &org/http4s/dsl/Http4sDsl2#`/`.20
+ "org/http4s/dsl/impl/`/`.unapply().2,
+ org/http4s/dsl/Http4sDsl2#`/`.2-
+ org/http4s/dsl/Http4sDsl2#Root.24
+. .&org/http4s/dsl/impl/PathVar#unapply().20
+' ."org/http4s/dsl/Http4sDsl2#UUIDVar.2
+/ 1local102$
+   !cats/Apply.Ops#`*>`().28
+   *cats/syntax/ApplySyntax#catsSyntaxApply().2/
+   !algebras/TaskRepository#delete().2%
+   api/TaskRoutes#algebra.2
+   local102B
+ $  $4org/http4s/dsl/impl/EntityResponseGenerator#apply().2=
+ "  "/org/http4s/dsl/impl/Responses#http4sOkSyntax().2.
+ "  $ org/http4s/dsl/impl/Statuses#Ok.21
+"" #org/http4s/dsl/impl/`->`.unapply().2-
+"" org/http4s/dsl/Http4sDsl2#`->`.2/
+"" !org/http4s/dsl/impl/Methods#POST.20
+"2" 2"org/http4s/dsl/impl/`/`.unapply().2,
+"1" 2org/http4s/dsl/Http4sDsl2#`/`.20
+"$" $"org/http4s/dsl/impl/`/`.unapply().2,
+"#" $org/http4s/dsl/Http4sDsl2#`/`.20
+"" "org/http4s/dsl/impl/`/`.unapply().2,
+"" org/http4s/dsl/Http4sDsl2#`/`.2-
+"" org/http4s/dsl/Http4sDsl2#Root.24
+"," ,&org/http4s/dsl/impl/PathVar#unapply().20
+"%" ,"org/http4s/dsl/Http4sDsl2#UUIDVar.2
+"-" /local112-
+#!# $cats/syntax/FlatMapOps#`>>=`().2?
+## 1cats/syntax/FlatMapSyntax#catsSyntaxFlatMapOps().21
+## #algebras/TaskRepository#complete().2%
+## api/TaskRoutes#algebra.2
+## local112"
+#(# ,scala/Option#fold().2B
+#5# 54org/http4s/dsl/impl/EntityResponseGenerator#apply().2C
+#-# -5org/http4s/dsl/impl/Responses#http4sNotFoundSyntax().24
+#-# 5&org/http4s/dsl/impl/Statuses#NotFound.2
+#9# :local122D
+#@# @6org/http4s/dsl/impl/EntityResponseGenerator#apply(+2).2=
+#># >/org/http4s/dsl/impl/Responses#http4sOkSyntax().2.
+#># @ org/http4s/dsl/impl/Statuses#Ok.2
+#A# Blocal122G
+#C# C9org/http4s/circe/CirceEntityEncoder#circeEntityEncoder().2$
+#C# Cdomain/Task.taskCodec.21
+%% #org/http4s/dsl/impl/`->`.unapply().2-
+%% org/http4s/dsl/Http4sDsl2#`->`.2.
+%%  org/http4s/dsl/impl/Methods#GET.20
+%% "org/http4s/dsl/impl/`/`.unapply().2,
+%% org/http4s/dsl/Http4sDsl2#`/`.2-
+%% org/http4s/dsl/Http4sDsl2#Root.2-
+&& cats/syntax/FlatMapOps#`>>=`().2?
+&& 1cats/syntax/FlatMapSyntax#catsSyntaxFlatMapOps().2.
+&&  algebras/TaskRepository#tasks().2%
+&& api/TaskRoutes#algebra.2
+&& $local132D
+&*& *6org/http4s/dsl/impl/EntityResponseGenerator#apply(+2).2=
+&(& (/org/http4s/dsl/impl/Responses#http4sOkSyntax().2.
+&(& * org/http4s/dsl/impl/Statuses#Ok.2
+&+& 0local132G
+&1& 19org/http4s/circe/CirceEntityEncoder#circeEntityEncoder().23
+&1& 1%domain/Tasks$package.Tasks.taskCodec.21
+(( #org/http4s/dsl/impl/`->`.unapply().2-
+(( org/http4s/dsl/Http4sDsl2#`->`.2.
+((  org/http4s/dsl/impl/Methods#GET.20
+($( $"org/http4s/dsl/impl/`/`.unapply().2,
+(#( $org/http4s/dsl/Http4sDsl2#`/`.20
+(( "org/http4s/dsl/impl/`/`.unapply().2,
+(( org/http4s/dsl/Http4sDsl2#`/`.2-
+(( org/http4s/dsl/Http4sDsl2#Root.2
+(%( (local142-
+)$) 'cats/syntax/FlatMapOps#`>>=`().2?
+)) 1cats/syntax/FlatMapSyntax#catsSyntaxFlatMapOps().20
+)) "algebras/TaskRepository#tasks(+1).2%
+)) api/TaskRoutes#algebra.2!
+)) domain/Tag.apply().2
+)) domain/Tag.2
+)) !local142
+))) .local152D
+)4) 46org/http4s/dsl/impl/EntityResponseGenerator#apply(+2).2=
+)2) 2/org/http4s/dsl/impl/Responses#http4sOkSyntax().2.
+)2) 4 org/http4s/dsl/impl/Statuses#Ok.2
+)5) :local152G
+);) ;9org/http4s/circe/CirceEntityEncoder#circeEntityEncoder().23
+);) ;%domain/Tasks$package.Tasks.taskCodec.21
+++ #org/http4s/dsl/impl/`->`.unapply().2-
+++ org/http4s/dsl/Http4sDsl2#`->`.2.
+++  org/http4s/dsl/impl/Methods#GET.20
+++ "org/http4s/dsl/impl/`/`.unapply().2,
+++ org/http4s/dsl/Http4sDsl2#`/`.2-
+++ org/http4s/dsl/Http4sDsl2#Root.2-
+,, cats/syntax/FlatMapOps#`>>=`().2?
+,, 1cats/syntax/FlatMapSyntax#catsSyntaxFlatMapOps().2-
+,, algebras/TaskRepository#tags().2%
+,, api/TaskRoutes#algebra.2
+,, "local162D
+,(, (6org/http4s/dsl/impl/EntityResponseGenerator#apply(+2).2=
+,&, &/org/http4s/dsl/impl/Responses#http4sOkSyntax().2.
+,&, ( org/http4s/dsl/impl/Statuses#Ok.2
+,), -local162G
+,., .9org/http4s/circe/CirceEntityEncoder#circeEntityEncoder().21
+,., .#domain/Tags$package.Tags.tagsCodec.PZ 486DA785A1020B756429F03885A1DBBD

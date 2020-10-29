@@ -1,0 +1,82 @@
+
+ˆ-src/main/scala/delivery/InMemoryHttpApp.scala*3
+delivery/InMemoryHttpApp.
+ *InMemoryHttpApp€*1
+"delivery/InMemoryHttpApp.create().*create€*/
+%delivery/InMemoryHttpApp.create().[F]	*F€*;
++delivery/InMemoryHttpApp.create().(blocker)*blocker€*3
+'delivery/InMemoryHttpApp.create().(ref)*ref€2
+ 	delivery/2
+ cats/effect/2
+ cats/2
+ cats/implicits.2
+ cats/2)
+ !cats/effect/concurrent/Ref.2)
+ !cats/effect/concurrent/Ref#2%
+ cats/effect/concurrent/2
+ cats/effect/2
+ cats/2
+ org/http4s/2
+ 
+org/20
+  "org/http4s/syntax/package.kleisli.2 
+ org/http4s/syntax/2
+ org/http4s/2
+ 
+org/2'
+  org/http4s/server/Router.2 
+ org/http4s/server/2
+ org/http4s/2
+ 
+org/21
+" )#scala/collection/immutable/HashMap.21
+" )#scala/collection/immutable/HashMap#2)
+ !scala/collection/immutable/2
+ scala/collection/2
+ scala/2
+		 java/util/UUID#2
+		 
+java/util/2
+		 java/2
+ api/TaskRoutes.2
+ 
+api/2
+ domain/Task.2
+ domain/Task#2
+ domain/23
+ +%interpreters/InMemoryTaskInterpreter.2
+ interpreters/2'
+ delivery/InMemoryHttpApp.20
+ "delivery/InMemoryHttpApp.create().23
+ %delivery/InMemoryHttpApp.create().[F]29
+/ 6+delivery/InMemoryHttpApp.create().(blocker)2"
+8 ?cats/effect/Blocker#25
+A D'delivery/InMemoryHttpApp.create().(ref)2)
+F Icats/effect/concurrent/Ref#23
+J K%delivery/InMemoryHttpApp.create().[F]21
+M T#scala/collection/immutable/HashMap#2
+U Yjava/util/UUID#2
+[ _domain/Task#2%
+ cats/effect/Concurrent#23
+ %delivery/InMemoryHttpApp.create().[F]2'
+! -cats/effect/ContextShift#23
+- -%delivery/InMemoryHttpApp.create().[F]2)
+d korg/http4s/package.HttpApp#23
+l m%delivery/InMemoryHttpApp.create().[F]2@
+8 B2org/http4s/syntax/KleisliResponseOps#orNotFound().2S
+ Eorg/http4s/syntax/KleisliSyntax#http4sKleisliResponseSyntaxOptionT().20
+ "org/http4s/server/Router.define().2'
+ org/http4s/server/Router.2-
+ scala/Predef.ArrowAssoc#`->`().2(
+ scala/Predef.ArrowAssoc().2(
+W aapi/TaskRoutes#httpRoutes.2(
+1 1api/TaskRoutes#`<init>`().2
+$ .api/TaskRoutes#23
+/ 0%delivery/InMemoryHttpApp.create().[F]2<
+J P.interpreters/InMemoryTaskInterpreter.create().23
+2 I%interpreters/InMemoryTaskInterpreter.25
+Q T'delivery/InMemoryHttpApp.create().(ref)2,
+U Ueffects/GenUUID.syncGenUUID().2.
+& - delivery/AssetService.service().2$
+ %delivery/AssetService.29
+. 5+delivery/InMemoryHttpApp.create().(blocker)PZ F6792E07122E8B67738AD3F3C26980D7

@@ -1,0 +1,125 @@
+
+œsrc/main/scala/Main.scala*
+
+todo/Main.
+ *Main€*%
+todo/Main.program. €*program€*
+local0*blocker€*
+local1*ref€*
+local2*server€*
+local3*x$1€*
+local4*x$1€*
+todo/Main.run().*run€*#
+todo/Main.run().(args)*args€2
+ todo/2
+ cats/effect/2
+ cats/2
+ cats/implicits.2
+ cats/2)
+ !cats/effect/concurrent/Ref.2)
+ !cats/effect/concurrent/Ref#2%
+ cats/effect/concurrent/2
+ cats/effect/2
+ cats/2
+ fs2/Stream.2
+ fs2/Stream#2
+ 
+fs2/2
+ org/http4s/2
+ 
+org/21
+" )#scala/collection/immutable/HashMap.21
+" )#scala/collection/immutable/HashMap#2)
+ !scala/collection/immutable/2
+ scala/collection/2
+ scala/2
+ java/util/UUID#2
+ 
+java/util/2
+ java/2
+
+
+ api/TaskRoutes.2
+
+
+ 
+api/23
+ +%interpreters/InMemoryTaskInterpreter.2
+ interpreters/2
+ domain/Task.2
+ domain/Task#2
+ domain/2
+ 	delivery/2
+ 
+todo/Main.2 
+ cats/effect/IOApp#2 
+ todo/Main.program.2
+ fs2/Stream#2
+" &scala/Unit#2#
+- -fs2/Stream#flatMap().2$
+  fs2/Stream.resource().2
+ fs2/Stream.2<
+( (.cats/effect/internals/BlockerPlatform#apply().2"
+! (cats/effect/Blocker.2;
+, ,-cats/effect/IOInstances#ioConcurrentEffect().2/
+, ,!cats/effect/IOApp#contextShift().2
+ local02#
+H Hfs2/Stream#flatMap().2 
+ fs2/Stream.eval().2
+ fs2/Stream.2.
+  cats/effect/concurrent/Ref.of().2)
+ cats/effect/concurrent/Ref.21
+$ +#scala/collection/immutable/HashMap#2
+, 0java/util/UUID#2
+2 6domain/Task#29
+A F+scala/collection/immutable/HashMap.empty().21
+9 @#scala/collection/immutable/HashMap.2;
+G G-cats/effect/IOInstances#ioConcurrentEffect().2/
+G G!cats/effect/IOApp#contextShift().2
+ 	local12#
+\ \fs2/Stream#flatMap().2$
+ fs2/Stream.resource().2
+ fs2/Stream.2/
+/ 5!delivery/InMemoryServer.create().2&
+  .delivery/InMemoryServer.20
+F L"delivery/InMemoryHttpApp.create().2'
+6 Edelivery/InMemoryHttpApp.2
+M Tlocal02
+V Ylocal12;
+Z Z-cats/effect/IOInstances#ioConcurrentEffect().2/
+Z Z!cats/effect/IOApp#contextShift().2;
+[ [-cats/effect/IOInstances#ioConcurrentEffect().2/
+[ [!cats/effect/IOApp#contextShift().2(
+[ [cats/effect/IOApp#timer().2
+ local22#
+8 8fs2/Stream#flatMap().2 
+ fs2/Stream.eval().2
+ fs2/Stream.2%
+ cats/effect/IO.apply().2
+ cats/effect/IO.2'
+ !scala/Predef.println(+1).2
+ local32
+. .fs2/Stream#map().2(
+ (fs2/Stream#covaryOutput().2!
+ fs2/Stream.never().2
+ fs2/Stream.2;
+ -cats/effect/IOInstances#ioConcurrentEffect().2/
+ !cats/effect/IOApp#contextShift().2
+) -scala/Unit#2
+ local42
+ 	todo/Main.run().2$
+
+ todo/Main.run().(args)2!
+ scala/package.List#2"
+ scala/Predef.String#2
+ !cats/effect/IO#2#
+" *cats/effect/ExitCode#2"
+ cats/effect/IO#as().2,
+ fs2/Stream.CompileOps#drain().2#
+ fs2/Stream#compile().2 
+ todo/Main.program.21
+ #fs2/Stream.Compiler.syncInstance().2;
+ -cats/effect/IOInstances#ioConcurrentEffect().2/
+ !cats/effect/IOApp#contextShift().2+
+& -cats/effect/ExitCode.Success.2#
+ %cats/effect/ExitCode.PZ 894475F36F1E098CB764C352DBF6F736

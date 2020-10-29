@@ -19,7 +19,7 @@ final class TaskRoutes[F[_]: Sync](algebra: TaskRepository[F]) extends Http4sDsl
 
     val httpRoutes: HttpRoutes[F] = HttpRoutes.of[F] {
         case GET -> Root / "task" / UUIDVar(id) =>
-                algebra.read(id) >>= (_.fold(NotFound())(t => Ok(t)))
+            algebra.read(id) >>= (_.fold(NotFound())(t => Ok(t)))
 
         case req @ POST -> Root / "task" =>
             req
