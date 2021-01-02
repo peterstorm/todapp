@@ -28,7 +28,7 @@ final class TaskRoutes[F[_]: Sync](algebra: TaskRepository[F]) extends Http4sDsl
         case req @ POST -> Root / "task" / UUIDVar(id) =>
             req
               .as[Task] >>= (t => algebra.update(id, t)) >>= (_.fold(NotFound())(t => Ok(t)))
-        
+
         case DELETE -> Root / "task" / UUIDVar(id) =>
             algebra.delete(id) *> Ok()
 

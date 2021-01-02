@@ -15,7 +15,7 @@ final case class DatabaseConfig(
 )
 
 object DatabaseConfig:
-    given configReader as ConfigReader[DatabaseConfig] = ConfigReader.forProduct5("driver", "url", "user", "pass", "poolSize")(DatabaseConfig(_, _, _, _, _))
+    given ConfigReader[DatabaseConfig] = ConfigReader.forProduct5("driver", "url", "user", "pass", "poolSize")(DatabaseConfig(_, _, _, _, _))
 
     def dbTransactor[F[_]: Async: ContextShift](config: DatabaseConfig, connEc: ExecutionContext, blocker: Blocker): Resource[F, HikariTransactor[F]] =
         HikariTransactor

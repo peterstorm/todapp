@@ -9,8 +9,8 @@ import java.util.UUID
 
 import domain._
 import algebras._
-import effects.GenUUID.{given _}
-import effects.GenZonedTimeDate.{given _}
+import effects.GenUUID.given
+import effects.GenZonedTimeDate.given
 import effects._
 
 object InMemoryTaskInterpreter:
@@ -52,5 +52,3 @@ object InMemoryTaskInterpreter:
 
             def tags: F[Tags] =
                 state.get.map(m => Tags(m.values.flatMap(t => t.tags).toList.distinct))
-                
-                

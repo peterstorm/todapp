@@ -11,7 +11,7 @@ object State:
   def completedNow(date: ZonedDateTime): State =
     Completed(date)
 
-  given stateCodec as Codec[State]:
+  given Codec[State] with
     def apply(c: HCursor): Decoder.Result[State] =
       c.downField("state").as[String].flatMap {
         case "active" =>

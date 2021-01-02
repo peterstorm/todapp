@@ -10,6 +10,6 @@ trait GenZonedTimeDate[F[_]]:
 object GenZonedTimeDate:
     def apply[F[_]](using ev: GenZonedTimeDate[F]): GenZonedTimeDate[F] = ev
 
-    given syncGenZonedTimeDate[F[_]](using syncF: Sync[F]) as GenZonedTimeDate[F]:
+    given syncGenZonedTimeDate[F[_]](using syncF: Sync[F]): GenZonedTimeDate[F] with
         def make: F[ZonedDateTime] = syncF.delay(ZonedDateTime.now())
 

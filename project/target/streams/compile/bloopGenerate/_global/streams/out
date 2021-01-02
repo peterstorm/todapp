@@ -1,4 +1,4 @@
-[debug] [todo-build] Classpath dependencies List()
-[debug] [todo-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'todo-build' to 'E:\team-development\pksh\intellij-workspace\dotty-backend\todo\project\.bloop\todo-build.json'
-[success] Generated .bloop\todo-build.json
+[0m[[0m[0mdebug[0m] [0m[0m[todapp-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[todapp-build] Dependencies from configurations List()[0m
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'todapp-build' to '/home/peterstorm/dev/scala/todapp/project/.bloop/todapp-build.json'[0m
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop/todapp-build.json[0m

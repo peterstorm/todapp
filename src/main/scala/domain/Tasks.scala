@@ -11,7 +11,7 @@ object Tasks:
 
     val empty: Tasks = Tasks(List.empty)
 
-    extension (t: Tasks):
+    extension (t: Tasks)
         def toList: List[(UUID, Task)] = t.toList
 
         def toMap: Map[UUID, Task] = t.toMap
@@ -23,7 +23,7 @@ object Tasks:
                 task <- c.downField("task").as[Task]
             yield (id -> task)
 
-    given taskCodec as Codec[Tasks]:
+    given Codec[Tasks] with
         def apply(c: HCursor): Decoder.Result[Tasks] =
             c.as(Decoder.decodeList(elementDecoder)).map(t => Tasks(t))
         

@@ -1,4 +1,3 @@
-[debug] "not up to date. inChanged = false, force = false
-[debug] Updating ProjectRef(uri("file:/E:/team-development/pksh/intellij-workspace/dotty-backend/todo/project/"), "todo-build")...
-[debug] Done updating ProjectRef(uri("file:/E:/team-development/pksh/intellij-workspace/dotty-backend/todo/project/"), "todo-build")
-[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/home/peterstorm/dev/scala/todapp/project/"), "todapp-build")...[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/home/peterstorm/dev/scala/todapp/project/"), "todapp-build")[0m

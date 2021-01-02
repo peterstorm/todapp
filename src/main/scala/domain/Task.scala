@@ -19,7 +19,7 @@ final case class Task(
         this.copy(state = newState)
 
 object Task:
-    given taskCodec as Codec[Task]:
+    given Codec[Task] with
         def apply(c: HCursor): Decoder.Result[Task] =
             for
                 state <- c.downField("state").as[State]

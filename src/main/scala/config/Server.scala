@@ -8,4 +8,4 @@ final case class ServerConfig(
 )
 
 object ServerConfig:
-    given configReader as ConfigReader[ServerConfig] = ConfigReader.forProduct2("host", "port")(ServerConfig(_, _))
+    given ConfigReader[ServerConfig] = ConfigReader.forProduct2("host", "port")(ServerConfig(_, _))

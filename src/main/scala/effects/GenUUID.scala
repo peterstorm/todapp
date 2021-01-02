@@ -10,5 +10,5 @@ trait GenUUID[F[_]]:
 object GenUUID:
     def apply[F[_]](using ev: GenUUID[F]): GenUUID[F] = ev
 
-    given syncGenUUID[F[_]](using syncF: Sync[F]) as GenUUID[F]:
+    given syncGenUUID[F[_]](using syncF: Sync[F]): GenUUID[F] with
         def make: F[UUID] = syncF.delay(UUID.randomUUID())
