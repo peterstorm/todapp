@@ -1,38 +1,0 @@
-
-”*src/main/scala/delivery/AssetService.scala*-
-delivery/AssetService.
- *AssetService€*0
- delivery/AssetService.service().*service€*-
-#delivery/AssetService.service().[F]	*F€*9
-)delivery/AssetService.service().(blocker)*blocker€*1
-$delivery/AssetService.service().(cs)  *cs€2
- 	delivery/2
- cats/effect/2
- cats/2$
- org/http4s/HttpRoutes.2
- org/http4s/2
- 
-org/2.
- & org/http4s/server/staticcontent/2 
- org/http4s/server/2
- org/http4s/2
- 
-org/2$
- delivery/AssetService.2.
-  delivery/AssetService.service().21
- #delivery/AssetService.service().[F]27
- #)delivery/AssetService.service().(blocker)2"
-% ,cats/effect/Blocker#2
- cats/effect/Sync#21
- #delivery/AssetService.service().[F]22
-4 6$delivery/AssetService.service().(cs)2'
-8 Dcats/effect/ContextShift#21
-E F#delivery/AssetService.service().[F]2,
-J Torg/http4s/package.HttpRoutes#21
-U V#delivery/AssetService.service().[F]2D
- 6org/http4s/server/staticcontent/package.fileService().2I
-$ $;org/http4s/server/staticcontent/FileService.Config.apply().2A
- $3org/http4s/server/staticcontent/FileService.Config.2:
- ,org/http4s/server/staticcontent/FileService.27
-1 8)delivery/AssetService.service().(blocker)22
-9 9$delivery/AssetService.service().(cs)PZ 8F419B777C00AFB37E1415E53BC322F9

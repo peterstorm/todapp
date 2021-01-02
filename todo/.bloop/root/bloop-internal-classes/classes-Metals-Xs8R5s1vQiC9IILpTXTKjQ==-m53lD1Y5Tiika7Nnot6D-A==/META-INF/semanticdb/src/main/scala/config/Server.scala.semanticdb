@@ -1,64 +1,0 @@
-
-ª"src/main/scala/config/Server.scala*,
-config/ServerConfig# ˆ*ServerConfig€*1
-config/ServerConfig#`<init>`(). €@*<init>€*5
-%config/ServerConfig#`<init>`().(host) €*host€*5
-%config/ServerConfig#`<init>`().(port) €*port€*)
-config/ServerConfig#host. €*host€*)
-config/ServerConfig#port. €*port€*(
-config/ServerConfig#copy().*copy€*.
-!config/ServerConfig#copy().(host)*host€*.
-!config/ServerConfig#copy().(port)*port€*<
-%config/ServerConfig#copy$default$1().*copy$default$1€*<
-%config/ServerConfig#copy$default$2().*copy$default$2€*$
-config/ServerConfig#_1().*_1€*$
-config/ServerConfig#_2().*_2€*+
-config/ServerConfig.
- *ServerConfig€**
-config/ServerConfig.apply().*apply€*/
-"config/ServerConfig.apply().(host)*host€*/
-"config/ServerConfig.apply().(port)*port€*.
-config/ServerConfig.unapply().*unapply€*/
-#config/ServerConfig.unapply().(x$1)*x$1€*0
-config/ServerConfig.toString().*toString€*:
-#config/ServerConfig.configReader(). (*configReader€2
- config/2
- pureconfig/2"
- config/ServerConfig#2-
- config/ServerConfig#`<init>`().2"
-
- scala/Predef.String#2
-
- 
-scala/Int#2'
- config/ServerConfig#host.2'
- config/ServerConfig#port.2"
-		 config/ServerConfig.21
-
-
-
- #config/ServerConfig.configReader().2&
-
-
- &pureconfig/ConfigReader#2"
-
-'
- 3config/ServerConfig#26
-
-D
- O(pureconfig/ProductReaders#forProduct2().2&
-
-7
- Cpureconfig/ConfigReader.2*
-
-l
- lconfig/ServerConfig.apply().2"
-
-`
- lconfig/ServerConfig.2=
-
-s
- s/pureconfig/PrimitiveReaders#stringConfigReader.2:
-
-s
- s,pureconfig/PrimitiveReaders#intConfigReader.PZ FD65C894BBAC93360A3912AA421AABFA
